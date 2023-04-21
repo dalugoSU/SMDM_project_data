@@ -4,7 +4,7 @@ Hello, These are the data cols and their descriptions, Let me know what you thin
 Cell contents for dataframe (Prelim)
 
 | RepoID             - RepoID    (Identity for DF)
-| Name               - Repo name (.fullname)
+| Name               - Repo name (.full_name)
 | Type               - Is it an organization or nah (.raw_data['owner']['type'])
 | Topic              - Topics such as machine-learning, etc... (.topics)
 | Visibility         - Public or private (.visibility)
