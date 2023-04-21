@@ -1,0 +1,21 @@
+import pandas as pd
+
+from github import Github
+
+ACCESS_TOKEN = "YOUR ACCESS TOKEN"
+
+count = 0
+repo_list = []
+repo_gen = g.search_repositories(query='language:python')
+for repo in repo_gen:
+    if count >= 100:
+        print("Done")
+        break
+    repo_list.append(repo)
+    count += 1
+
+
+# Simple script getting repos with "python" in their meta. Only getting 100
+# API Rate limits, so either we can have a loop collecting 100 then sleeping for some time then keep going again
+# Backup data from kaggle: https://www.kaggle.com/datasets/vatsalparsaniya/github-repositories-analysis
+# Another project doing data analysis on github repos: https://www.kaggle.com/code/padhmam/analysing-popular-repositories-on-github
