@@ -1,0 +1,26 @@
+Hello, These are the data cols and their descriptions, Let me know what you think if we should get other cols
+
+
+Cell contents for dataframe (Prelim)
+
+
+| RepoID             - RepoID    (Identity for DF)
+| Name               - Repo name (.fullname)
+| Topic              - Topics such as machine-learning, etc...     (.topics)
+| Visibility         - Public or private (.visibility)
+| Language(s)        - Languages used in repo (.languages)
+| Published          - When was this repo publised to Github (?)
+| Last Modified      - When was this repo last modified/active (.last_modified)
+| Stars              - How many people have starred this repo (.stargazers_count)
+| Forks              - How many people have forked this repo (.forks)
+| WatchCount         - How many people are watching this repo (.watchers_count)
+| CloneCount         - How many people have cloned this repo (?)
+| NetworkCount       - How many repos does this repo owner have - *this* repo (.network_count)
+| IssueCount         - How many open issues does this repo have (.open_issues_count)
+| PRCount            - How many pull requests does this repo have (.get_pulls()? returns paginated PR objects)
+| ProjectsCount      - How many projects are open with this repo (?)
+| BranchCount        - How many branches does this repo have? (?)
+| PackageCount       - How many packages does this repo have? (?)
+| ContributorCount   - How many contributors does this repo have? (?)
+| RepoURL            - Repo URL - Housekeeping (?)
+
