@@ -9,9 +9,10 @@ load_dotenv()
 
 # using an access token
 github_access_token = os.getenv("GITHUB_ACCESS_TOKEN")
+print(github_access_token)
 g = Github(github_access_token)
 
-query = 'is:public stars:>100 created:2021'
+query = 'is:public stars:>500 created:2021-03-01..2021-04-30'
 
 # continue from the breakpoint
 for repo in g.search_repositories(query=query, sort='forks', order='desc')[0:]:
