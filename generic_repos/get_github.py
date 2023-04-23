@@ -54,7 +54,6 @@ for repo in g.search_repositories(query=query, sort='forks', order='desc')[0:]:
             repo.topics,
             repo.visibility,
             repo.language,
-            repo.languages_url,
             repo.created_at,
             repo.last_modified,
             repo.stargazers_count,
