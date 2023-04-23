@@ -12,7 +12,7 @@ github_access_token = os.getenv("GITHUB_ACCESS_TOKEN")
 print(github_access_token)
 g = Github(github_access_token)
 
-query = 'is:public stars:>500 created:2021-11-01..2021-12-31'
+query = 'is:public stars:>500 created:2020-12-11..2020-12-31'
 
 # continue from the breakpoint
 for repo in g.search_repositories(query=query, sort='forks', order='desc')[0:]:
@@ -69,6 +69,6 @@ for repo in g.search_repositories(query=query, sort='forks', order='desc')[0:]:
             repo_contributor_count,
             repo.url]
     # Write to CSV
-    with open("collect_data/2021.csv", "a", newline="") as f:
+    with open("collect_data/2020.csv", "a", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(data)
