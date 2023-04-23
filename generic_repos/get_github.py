@@ -12,7 +12,7 @@ github_access_token = os.getenv("GITHUB_ACCESS_TOKEN")
 print(github_access_token)
 g = Github(github_access_token)
 
-query = 'is:public stars:>500 created:2021-03-01..2021-04-30'
+query = 'is:public stars:>500 created:2021-11-01..2021-12-31'
 
 # continue from the breakpoint
 for repo in g.search_repositories(query=query, sort='forks', order='desc')[0:]:
