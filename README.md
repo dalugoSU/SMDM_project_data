@@ -64,6 +64,8 @@ The cells of these files must be **BEFORE** any code in the statistical notebook
 
 ## Interactive Tool
 
+> **IMPORTANT NOTE** When selecting a year general repos have data for 2018-2022 **ONLY.** Big corporations, however, you can select from 2011 to 2023.
+
 We used interact to an interactive tool to view different statistics on the dataset. For example, users can choose to view the most starred language in 2019. Users can choose to view the top language, top five, and top 10 languages of a specific category. Users also have the capability to view statistics for only general public repositories, big corporation repositories, or both at once. Users can also view data from a specific year or all years at once. Finally, users view data for a specific attribute of repositories. These are the available attribute options: stars, forks, watch count, network count, issue count, pull request count, projects count, branch count, and lastly contributor count. With this tool the main goal is to view quick statistical data either as a data frame or as a graph.
 
 ### Usage
