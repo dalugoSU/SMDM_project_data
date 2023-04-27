@@ -37,11 +37,11 @@ geographic location.
 
 ### Preparing Environment
 1. Create a local directory on your computer
+2. generate .env file and place your personal access token.`cp .env.example .env`
 2. Install anaconda on your system
 3. Download all CSV files for general repos located at generic_repos/collect_data/
 4. Download all CSV files for big corporations located at big_companies/collect_data/
 5. Download desired statistical analysis from visualization_code/code/ (**NOTE** in [Development](#important-note))
-6. generate .env file and place your personal access token.`cp .env.example .env`
 
 ### Running The Code
 1. Navigate to anaconda and launch Jupyter Notebook
