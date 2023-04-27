@@ -12,6 +12,7 @@ github_access_token = os.getenv("GITHUB_ACCESS_TOKEN")
 print(github_access_token)
 g = Github(github_access_token)
 
+# change created date to the date you want to start from
 query = 'is:public stars:>500 created:2019-10-29..2019-12-15'
 
 # continue from the breakpoint
@@ -68,7 +69,7 @@ for repo in g.search_repositories(query=query, sort='forks', order='desc')[0:]:
             repo_download_count,
             repo_contributor_count,
             repo.url]
-    # Write to CSV
+    # Write to CSV, we use year as the file name
     with open("collect_data/2019.csv", "a", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(data)
